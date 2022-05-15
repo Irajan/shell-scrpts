@@ -26,7 +26,7 @@ Linux scripts to use short handed syntax for git workflow
     </tr>
    <tr>
      <td>gfc  <code>&lt;commit-message&gt;</code></td>
-     <td>Commits the files with commit message <code>&lt;commit-message&gt;</code> prefixed with current branch name</td>
+     <td>Commits the files with commit message <code>&lt;commit-message&gt;</code><br>prefixed with current branch name</td>
     </tr>
     <tr>
       <td>ggpush</td>
@@ -38,9 +38,7 @@ Linux scripts to use short handed syntax for git workflow
     </tr>
      <tr>
       <td>gnfb <code>&lt;feature-branch&gt;</code></td>
-       <td>Backups changes in current branch to <code>local-bkp</code> branch (with <code>WIP</code> commit for unstaged changes)
-       <br/>
-        and swithces to new feature branch
+       <td>Backups changes in current branch to <code>local-bkp</code> branch <br/> (with <code>WIP</code> commit for unstaged changes) and switches<br> to branch <code>feature-branch</code> 
         containing all the changes of remote <code>dev</code> branch
        </td>
     </tr>
