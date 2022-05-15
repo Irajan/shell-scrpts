@@ -1,0 +1,16 @@
+#! /usr/bin/python3
+
+import sys
+import os
+import subprocess
+
+current_branch = subprocess.Popen(["git","branch","--show-current"], stdout=subprocess.PIPE).communicate()[0].decode('utf-8')[:-1];
+
+if len(sys.argv) > 1:
+ commit_message = sys.argv[1];
+else:
+ commit_message = input("Enter commit message: ");
+ 
+os.system('git add .')
+
+os.system(f'git commit -m "{current_branch}: {commit_message}" --no-verify');

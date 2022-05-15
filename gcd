@@ -1,0 +1,2 @@
+echo "Checking out to dev"
+git checkout dev

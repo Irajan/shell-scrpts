@@ -1,0 +1,14 @@
+#! /usr/bin/python3
+
+import sys
+import os
+import subprocess
+
+if len(sys.argv) > 1:
+ commit_message = sys.argv[1];
+else:
+ commit_message = input("Enter commit message: ");
+ 
+os.system('git add .')
+
+os.system(f'git commit -m "{commit_message}" --no-verify');

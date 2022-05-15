@@ -1,0 +1,25 @@
+#! /usr/bin/python3
+
+import sys
+import os
+
+if len(sys.argv) > 1:
+ branch_name = sys.argv [1];
+else:
+ branch_name = input('Enter feature branch Name: ')
+ 
+ 
+os.system('git branch -D local-bkp');
+
+os.system('git checkout -b local-bkp');
+
+os.system('git add . && git commit -m "WIP" --no-verify')
+
+os.system('git branch -D dev');
+
+os.system('git fetch origin dev');
+
+os.system('git checkout dev');
+
+os.system('git checkout -b '+ branch_name);
+

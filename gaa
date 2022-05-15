@@ -1,0 +1,5 @@
+echo "git add ."
+git add . 
+
+echo "git commit --amend --no-edit"
+git commit --amend --no-edit

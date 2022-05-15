@@ -1,0 +1,14 @@
+#! /usr/bin/python3
+
+import sys
+import os
+import subprocess
+
+if len(sys.argv) > 1:
+ force = sys.argv[1]
+else:
+ force = ""
+
+current_branch = subprocess.Popen(["git","branch","--show-current"], stdout=subprocess.PIPE).communicate()[0].decode('utf-8')[:-1]
+
+os.system(f'git push origin {current_branch} {force}')
