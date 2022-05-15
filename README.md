@@ -22,7 +22,7 @@ Linux scripts to use short handed syntax for git workflow
     </tr>
     <tr>
       <td>gcd</td>
-      <td>Switches to dev branch</td>
+      <td>Switches to <code>dev</code> branch</td>
     </tr>
    <tr>
      <td>gfc  <code>&lt;commit-message&gt;</code></td>
@@ -38,13 +38,15 @@ Linux scripts to use short handed syntax for git workflow
     </tr>
      <tr>
       <td>gnfb <code>&lt;feature-branch&gt;</code></td>
-       <td>Backups changes in current branch to <code>local-bkp</code> branch (with WIP commit for unstaged changes) and swithces to new feature branch
-        containing all the changes of remote dev branch
+       <td>Backups changes in current branch to <code>local-bkp</code> branch (with <code>WIP</code> commit for unstaged changes)
+       <br/>
+        and swithces to new feature branch
+        containing all the changes of remote <code>dev</code> branch
        </td>
     </tr>
       <tr>
       <td>gpodr</code></td>
-       <td>Pulls all the changes from dev branch and applies rebase to current local branch</td>
+       <td>Pulls all the changes from <code>dev</code> branch and applies rebase to current local branch</td>
     </tr>
     
   </tbody>
