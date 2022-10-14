@@ -11,6 +11,4 @@ if len(sys.argv) > 1:
 else:
  commit_message = input("Enter commit message: ");
  
-os.system('git add .')
-
-os.system(f'git commit -m "{current_branch}: {commit_message}" --no-verify');
+os.system(f'git commit -m "{current_branch}: {commit_message}"');
